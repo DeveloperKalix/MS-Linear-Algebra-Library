@@ -1,0 +1,14 @@
+C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\bin\Debug\net8.0\LinearAlgebraLib.exe
+C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\bin\Debug\net8.0\LinearAlgebraLib.deps.json
+C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\bin\Debug\net8.0\LinearAlgebraLib.runtimeconfig.json
+C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\bin\Debug\net8.0\LinearAlgebraLib.dll
+C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\bin\Debug\net8.0\LinearAlgebraLib.pdb
+C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\obj\Debug\net8.0\LinearAlgebraLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\obj\Debug\net8.0\LinearAlgebraLib.AssemblyInfoInputs.cache
+C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\obj\Debug\net8.0\LinearAlgebraLib.AssemblyInfo.cs
+C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\obj\Debug\net8.0\LinearAlgebraLib.csproj.CoreCompileInputs.cache
+C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\obj\Debug\net8.0\LinearAlgebraLib.dll
+C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\obj\Debug\net8.0\refint\LinearAlgebraLib.dll
+C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\obj\Debug\net8.0\LinearAlgebraLib.pdb
+C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\obj\Debug\net8.0\LinearAlgebraLib.genruntimeconfig.cache
+C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\obj\Debug\net8.0\ref\LinearAlgebraLib.dll
