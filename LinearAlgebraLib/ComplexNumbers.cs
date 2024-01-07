@@ -59,8 +59,8 @@ namespace LinearAlgebraLibrary {
             }
 
             public static ImaginaryNumber squareRoot(int negativeNumber) {
-                if(i < 0) {
-                    return new ImaginaryNumber(Math.Sqrt(Math.Abs(i)));
+                if(negativeNumber < 0) {
+                    return new ImaginaryNumber(Math.Sqrt(Math.Abs(negativeNumber)));
                 }
                 else
                 {
@@ -69,8 +69,8 @@ namespace LinearAlgebraLibrary {
             }
 
             public static ImaginaryNumber squareRoot(double negativeNumber) {
-                if(i < 0) {
-                        return new ImaginaryNumber(Math.Sqrt(i));
+                if(negativeNumber < 0) {
+                        return new ImaginaryNumber(Math.Sqrt(negativeNumber));
                 }
                 else
                 {
@@ -79,7 +79,7 @@ namespace LinearAlgebraLibrary {
             }
 
             public static ImaginaryNumber squareRoot(long negativeNumber) {
-                if(i < 0) {
+                if(negativeNumber < 0) {
                         return new ImaginaryNumber(Math.Sqrt(negativeNumber));
                 }
                 else
