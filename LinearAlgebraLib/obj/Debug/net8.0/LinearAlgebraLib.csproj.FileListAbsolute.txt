@@ -12,3 +12,4 @@ C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\Linea
 C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\obj\Debug\net8.0\LinearAlgebraLib.pdb
 C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\obj\Debug\net8.0\LinearAlgebraLib.genruntimeconfig.cache
 C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\obj\Debug\net8.0\ref\LinearAlgebraLib.dll
+C:\Users\Mark\Documents\GitHub\MS_Linear_Algebra\MS-Linear-Algebra-Library\LinearAlgebraLib\obj\Debug\net8.0\LinearAlgebraLib.sourcelink.json

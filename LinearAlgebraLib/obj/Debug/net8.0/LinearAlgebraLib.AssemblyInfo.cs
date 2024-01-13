@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LinearAlgebraLib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24f592e4870b856ae09218aae2985a1c7f0188d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e474c2bbf4d7317ee5d0bf0715aa79ad8328643")]
 [assembly: System.Reflection.AssemblyProductAttribute("LinearAlgebraLib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LinearAlgebraLib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

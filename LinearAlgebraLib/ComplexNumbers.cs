@@ -2,7 +2,7 @@
 //Console.WriteLine("Hello, World!");
 
 using System.Dynamic;
-using System.Numerics;
+
 using System.Reflection.Metadata.Ecma335;
 
 namespace LinearAlgebraLibrary {
@@ -60,7 +60,8 @@ namespace LinearAlgebraLibrary {
 
             public static ImaginaryNumber squareRoot(int negativeNumber) {
                 if(negativeNumber < 0) {
-                    return new ImaginaryNumber(Math.Sqrt(Math.Abs(negativeNumber)));
+                    int positiveNumber = Math.Abs(negativeNumber);
+                    return new ImaginaryNumber(Math.Sqrt(positiveNumber));
                 }
                 else
                 {
@@ -70,7 +71,8 @@ namespace LinearAlgebraLibrary {
 
             public static ImaginaryNumber squareRoot(double negativeNumber) {
                 if(negativeNumber < 0) {
-                        return new ImaginaryNumber(Math.Sqrt(negativeNumber));
+                        double positiveNumber = Math.Abs(negativeNumber);
+                        return new ImaginaryNumber(Math.Sqrt(positiveNumber));
                 }
                 else
                 {
@@ -80,7 +82,8 @@ namespace LinearAlgebraLibrary {
 
             public static ImaginaryNumber squareRoot(long negativeNumber) {
                 if(negativeNumber < 0) {
-                        return new ImaginaryNumber(Math.Sqrt(negativeNumber));
+                        long positiveNumber = Math.Abs(negativeNumber);
+                        return new ImaginaryNumber(Math.Sqrt(positiveNumber));
                 }
                 else
                 {
@@ -194,7 +197,7 @@ namespace LinearAlgebraLibrary {
 
             public static ImaginaryNumber operator *(ImaginaryNumber n, double scalar) {
                 ImaginaryNumber im = new ImaginaryNumber(n.imaginaryNumber*scalar);
-                im.iPower = n.iPower;
+                im.iPower = n.iPower;         
                 im.iValue = imaginaryPowers[Math.Abs(im.iPower) % 4];
                 return im;
             }
@@ -436,6 +439,46 @@ namespace LinearAlgebraLibrary {
             public static ComplexNumber operator +(ImaginaryNumber a, ComplexNumber b) {
                 return new ComplexNumber(b.Real, a.imaginaryNumber + b.Imaginary);
             }
+
+            public static ComplexNumber operator +(int a, ComplexNumber b) {
+                return new ComplexNumber(b.Real + a, b.Imaginary);
+            }
+
+            public static ComplexNumber operator +(short a, ComplexNumber b) {
+                return new ComplexNumber(b.Real + a, b.Imaginary);
+            }
+
+            public static ComplexNumber operator +(long a, ComplexNumber b) {
+                return new ComplexNumber(b.Real + a, b.Imaginary);
+            }
+
+            public static ComplexNumber operator +(float a, ComplexNumber b) {
+                return new ComplexNumber(b.Real + a, b.Imaginary);
+            }
+
+            public static ComplexNumber operator +(double a, ComplexNumber b) {
+                return new ComplexNumber(b.Real + a, b.Imaginary);
+            }
+
+            public static ComplexNumber operator +(ComplexNumber a, int b) {
+                return new ComplexNumber(a.Real + b, a.Imaginary);
+            }
+
+            public static ComplexNumber operator +(ComplexNumber a, short b) {
+                return new ComplexNumber(a.Real + b, a.Imaginary);
+            }
+
+            public static ComplexNumber operator +(ComplexNumber a, long b) {
+                return new ComplexNumber(a.Real + b, a.Imaginary);
+            }
+
+            public static ComplexNumber operator +(ComplexNumber a, float b) {
+                return new ComplexNumber(a.Real + b, a.Imaginary);
+            }
+
+            public static ComplexNumber operator +(ComplexNumber a, double b) {
+                return new ComplexNumber(a.Real + b, a.Imaginary);
+            }
             
             public static ComplexNumber operator -(ComplexNumber a, ComplexNumber b) {
                 return new ComplexNumber(a.Real - b.Real, a.Imaginary - b.Imaginary);
@@ -448,11 +491,114 @@ namespace LinearAlgebraLibrary {
             public static ComplexNumber operator -(ImaginaryNumber a, ComplexNumber b) {
                 return new ComplexNumber(-b.Real, a.imaginaryNumber - b.Imaginary);
             }
+
+            public static ComplexNumber operator -(int a, ComplexNumber b) {
+                return new ComplexNumber(a-b.Real, b.Imaginary);
+            }
+            public static ComplexNumber operator -(short a, ComplexNumber b) {
+                return new ComplexNumber(a-b.Real, b.Imaginary);
+            }
+            public static ComplexNumber operator -(long a, ComplexNumber b) {
+                return new ComplexNumber(a-b.Real, b.Imaginary);
+            }
+            public static ComplexNumber operator -(float a, ComplexNumber b) {
+                return new ComplexNumber(a-b.Real, b.Imaginary);
+            }
+            public static ComplexNumber operator -(double a, ComplexNumber b) {
+                return new ComplexNumber(a-b.Real, b.Imaginary);
+            }
+            public static ComplexNumber operator -(ComplexNumber a, int b) {
+                return new ComplexNumber(a.Real-b, a.Imaginary);
+            }
+            public static ComplexNumber operator -(ComplexNumber a, short b) {
+                return new ComplexNumber(a.Real-b, a.Imaginary);
+            }
+            public static ComplexNumber operator -(ComplexNumber a, long b) {
+                return new ComplexNumber(a.Real-b, a.Imaginary);
+            }
+            public static ComplexNumber operator -(ComplexNumber a, float b) {
+                return new ComplexNumber(a.Real-b, a.Imaginary);
+            }
+            public static ComplexNumber operator -(ComplexNumber a, double b) {
+                return new ComplexNumber(a.Real-b, a.Imaginary);
+            }
             public static ComplexNumber operator *(ImaginaryNumber a, ComplexNumber b) {
                 
                 ComplexNumber cn = new ComplexNumber(-(b.Imaginary*a.imaginaryNumber), b.Real*a.imaginaryNumber);
                 cn.iValue = b.iValue;
                 cn.iPower = b.iPower;
+                return cn;
+            }
+
+            public static ComplexNumber operator *(int a, ComplexNumber b) {
+                
+                ComplexNumber cn = new ComplexNumber(b.Real*a, b.Imaginary*a);
+                cn.iValue = b.iValue;
+                cn.iPower = b.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator *(float a, ComplexNumber b) {
+                
+                ComplexNumber cn = new ComplexNumber(b.Real*a, b.Imaginary*a);
+                cn.iValue = b.iValue;
+                cn.iPower = b.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator *(double a, ComplexNumber b) {
+                
+                ComplexNumber cn = new ComplexNumber(b.Real*a, b.Imaginary*a);
+                cn.iValue = b.iValue;
+                cn.iPower = b.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator *(short a, ComplexNumber b) {
+                
+                ComplexNumber cn = new ComplexNumber(b.Real*a, b.Imaginary*a);
+                cn.iValue = b.iValue;
+                cn.iPower = b.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator *(long a, ComplexNumber b) {
+                
+                ComplexNumber cn = new ComplexNumber(b.Real*a, b.Imaginary*a);
+                cn.iValue = b.iValue;
+                cn.iPower = b.iPower;
+                return cn;
+            }
+
+            public static ComplexNumber operator *(ComplexNumber a, int b) {
+                
+                ComplexNumber cn = new ComplexNumber(a.Real*b, a.Imaginary*b);
+                cn.iValue = a.iValue;
+                cn.iPower = a.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator *(ComplexNumber a, double b) {
+                
+                ComplexNumber cn = new ComplexNumber(a.Real*b, a.Imaginary*b);
+                cn.iValue = a.iValue;
+                cn.iPower = a.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator *(ComplexNumber a, short b) {
+                
+                ComplexNumber cn = new ComplexNumber(a.Real*b, a.Imaginary*b);
+                cn.iValue = a.iValue;
+                cn.iPower = a.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator *(ComplexNumber a, long b) {
+                
+                ComplexNumber cn = new ComplexNumber(a.Real*b, a.Imaginary*b);
+                cn.iValue = a.iValue;
+                cn.iPower = a.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator *(ComplexNumber a, float b) {
+                
+                ComplexNumber cn = new ComplexNumber(a.Real*b, a.Imaginary*b);
+                cn.iValue = a.iValue;
+                cn.iPower = a.iPower;
                 return cn;
             }
             public static ComplexNumber operator *(ComplexNumber b, ImaginaryNumber a) {
@@ -465,6 +611,76 @@ namespace LinearAlgebraLibrary {
             public static ComplexNumber operator /(ComplexNumber b, ImaginaryNumber a) {
                 
                 ComplexNumber cn = new ComplexNumber(-(b.Imaginary*a.imaginaryNumber), b.Real*a.imaginaryNumber);
+                cn.iValue = b.iValue;
+                cn.iPower = b.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator /(ComplexNumber b, int a) {
+                
+                ComplexNumber cn = new ComplexNumber(b.Real/a, b.Imaginary/a);
+                cn.iValue = b.iValue;
+                cn.iPower = b.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator /(ComplexNumber b, long a) {
+                
+                ComplexNumber cn = new ComplexNumber(b.Real/a, b.Imaginary/a);
+                cn.iValue = b.iValue;
+                cn.iPower = b.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator /(ComplexNumber b, short a) {
+                
+                ComplexNumber cn = new ComplexNumber(b.Real/a, b.Imaginary/a);
+                cn.iValue = b.iValue;
+                cn.iPower = b.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator /(ComplexNumber b, float a) {
+                
+                ComplexNumber cn = new ComplexNumber(b.Real/a, b.Imaginary/a);
+                cn.iValue = b.iValue;
+                cn.iPower = b.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator /(ComplexNumber b, double a) {
+                
+                ComplexNumber cn = new ComplexNumber(b.Real/a, b.Imaginary/a);
+                cn.iValue = b.iValue;
+                cn.iPower = b.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator /(int a, ComplexNumber b) {
+                
+                ComplexNumber cn = new ComplexNumber(b.Real/a, b.Imaginary/a);
+                cn.iValue = b.iValue;
+                cn.iPower = b.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator /(long a, ComplexNumber b) {
+                
+                ComplexNumber cn = new ComplexNumber(b.Real/a, b.Imaginary/a);
+                cn.iValue = b.iValue;
+                cn.iPower = b.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator /(short a, ComplexNumber b) {
+                
+                ComplexNumber cn = new ComplexNumber(b.Real/a, b.Imaginary/a);
+                cn.iValue = b.iValue;
+                cn.iPower = b.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator /(float a, ComplexNumber b) {
+                
+                ComplexNumber cn = new ComplexNumber(b.Real/a, b.Imaginary/a);
+                cn.iValue = b.iValue;
+                cn.iPower = b.iPower;
+                return cn;
+            }
+            public static ComplexNumber operator /(double a, ComplexNumber b) {
+                
+                ComplexNumber cn = new ComplexNumber(b.Real/a, b.Imaginary/a);
                 cn.iValue = b.iValue;
                 cn.iPower = b.iPower;
                 return cn;
@@ -518,11 +734,32 @@ namespace LinearAlgebraLibrary {
 
             inum2 = ImaginaryNumbers.Conjugate(inum2);
             cnum = ImaginaryNumbers.Conjugate(cnum);
+
+            ImaginaryNumber inumt = ImaginaryNumber.squareRoot(-8.5655);
+            //Console.WriteLine(inumt);
             ComplexNumber cnum3 = cnum * cnum2;
-            Console.WriteLine(inum2);
-            Console.WriteLine(cnum3);
+            //Console.WriteLine(inum2);
+            //Console.WriteLine(cnum3);
             cnum3 = cnum4 / cnum5;
-            Console.WriteLine(cnum3);
+            //Console.WriteLine(cnum3);
+            object[] test =  [new ImaginaryNumber(3), 5, 7, 8, new ImaginaryNumber(3), 2];
+            object[] test2 =  [15, 2, 3, new ImaginaryNumber(2), 1, 9];
+
+            Vector<object> vec = new Vector<object>(test);
+            Vector<object> vec2 = new Vector<object>(test2);
+            //double num = 0;
+            // Console.WriteLine(vec.values[0].GetType());
+            // Console.WriteLine(vec.values[1].GetType());
+            // Console.Write(cnum5.iPower);
+            // Console.WriteLine(cnum5.iValue);
+            // foreach(var item in test) {
+            //     Console.WriteLine(item);
+            // }
+            
+            cnum5 = Vector<object>.imaginaryDotProduct(vec, vec2, 0, cnum5);
+            
+            Console.WriteLine(cnum5);
+            
 
         }
         
